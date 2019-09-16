@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/frame"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.unicamp.ft.f170775.trabalhomobile.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:orientation="vertical"
+    android:background="@color/Gray"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingEnd="15dp">
+                <Button
+                    android:layout_width="@dimen/largIcon"
+                    android:layout_height="@dimen/altIcon"
+                    android:onClick="onClickMapa"
+                    android:background="@drawable/mapicon"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp">
+                <Button
+                    android:layout_width="@dimen/largIcon"
+                    android:layout_height="@dimen/altIcon"
+                    android:onClick="onClickRestaurante"
+                    android:background="@drawable/restauranticon"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingEnd="15dp">
+                <Button
+                    android:layout_width="@dimen/largIcon"
+                    android:layout_height="@dimen/altIcon"
+                    android:background="@drawable/marketicon"
+                    android:onClick="onClickMercado"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="15dp">
+                <Button
+                    android:layout_width="@dimen/largIcon"
+                    android:layout_height="@dimen/altIcon"
+                    android:background="@drawable/shoppingicon"
+                    android:onClick="onClickShopping"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
